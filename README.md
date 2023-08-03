@@ -20,6 +20,12 @@
   - [Bookmark Category](./endpoints/bookmark-category)
     - [Attach category](./endpoints/bookmark-category.md#attach-category)
     - [Detach category](./endpoints/bookmark-category.md#detach-category)
+  - [Reminders](./endpoints/reminders.md)
+    - [List reminders](./endpoints/reminders.md#list-reminders)
+    - [Get reminder](./endpoints/reminders.md#get-reminder)
+    - [Create reminder](./endpoints/reminders.md#create-reminder)
+    - [Update reminder](./endpoints/reminders.md#update-reminder)
+    - [Delete reminder](./endpoints/reminders.md#delete-reminder)
 - [Contact](#contact)
 
 ## Introduction
