@@ -61,7 +61,7 @@ Endpoint: `POST` `/api/v1/categories`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
-| name | YES | The name of the category | unique, min. 2 characters, max. 20 characters |
+| name | YES | The name of the category | unique, min. 2 characters, max. 10 characters |
 
 ### Create category response
 
@@ -84,7 +84,7 @@ Endpoint: `PUT/PATCH` `/api/v1/categories/{name}`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
-| name | YES | The name of the category | unique, min. 2 characters, max. 20 characters |
+| name | YES | The name of the category | unique, min. 2 characters, max. 10 characters |
 
 ### Update category response
 
