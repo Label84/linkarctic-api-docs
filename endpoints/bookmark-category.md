@@ -9,7 +9,7 @@ You can attach - add a category to a bookmark, and detach - remove a category fr
 
 Attach a category to a bookmark.
 
-Endpoint: `PUT/PATCH` `/api/v1/bookmarks/{uuid}/categories/{name}`
+Endpoint: `PUT/PATCH` `/api/v1/boards/{uuid}/bookmarks/{uuid}/categories/{name}`
 
 ### Attach category response
 
@@ -38,7 +38,7 @@ Status: `200 OK`
 
 Detach a category from a bookmark.
 
-Endpoint: `PUT/PATCH` `/api/v1/bookmarks/{uuid}/categories/{name}`
+Endpoint: `PUT/PATCH` `/api/v1/boards/{uuid}/bookmarks/{uuid}/categories/{name}`
 
 ### Detach category response
 

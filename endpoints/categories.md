@@ -10,9 +10,9 @@ You can categorize your bookmarks by attaching one-or more categories to them.
 
 ## List categories
 
-Retrieve all categories.
+Retrieve all categories of a board.
 
-Endpoint: `GET` `/api/v1/categories`
+Endpoint: `GET` `/api/v1/boards/{uuid}/categories`
 
 ### List category response
 
@@ -38,7 +38,7 @@ Status: `200 OK`
 
 Retrieve a single category by its name.
 
-Endpoint: `GET` `/api/v1/categories/{name}`
+Endpoint: `GET` `/api/v1/boards/{uuid}/categories/{name}`
 
 ### Get category response
 
@@ -57,7 +57,7 @@ Status: `200 OK`
 
 Creates a category.
 
-Endpoint: `POST` `/api/v1/categories`
+Endpoint: `POST` `/api/v1/boards/{uuid}/categories`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
@@ -80,7 +80,7 @@ Status: `200 OK`
 
 Update an existing category.
 
-Endpoint: `PUT/PATCH` `/api/v1/categories/{name}`
+Endpoint: `PUT/PATCH` `/api/v1/boards/{uuid}/categories/{name}`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
@@ -103,7 +103,7 @@ Status: `200 OK`
 
 Delete a category. This will not impact any bookmark that have this category attached.
 
-Endpoint: `DELETE` `/api/v1/categories/{name}`
+Endpoint: `DELETE` `/api/v1/boards/{uuid}/categories/{name}`
 
 ### Delete category response
 

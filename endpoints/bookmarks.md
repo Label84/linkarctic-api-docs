@@ -1,6 +1,6 @@
 # Bookmarks
 
-Bookmark is an item that you want to add to the list. The bookmark description can consist of one-or more sentences and can include one-or more URLs.
+Bookmark is an item that you want to add to the board. The bookmark description can consist of one-or more sentences and can include one-or more URLs.
 
 - [List bookmarks](#list-bookmarks)
 - [Get bookmark](#get-bookmark)
@@ -10,9 +10,9 @@ Bookmark is an item that you want to add to the list. The bookmark description c
 
 ## List bookmarks
 
-Retrieve all bookmarks.
+Retrieve all bookmarks of a board.
 
-Endpoint: `GET` `/api/v1/bookmarks`
+Endpoint: `GET` `/api/v1/boards/{uuid}/bookmarks`
 
 ### List bookmark response
 
@@ -48,7 +48,7 @@ Status: `200 OK`
 
 Retrieve a single bookmark by its UUID.
 
-Endpoint: `GET` `/api/v1/bookmarks/{uuid}`
+Endpoint: `GET` `/api/v1/boards/{uuid}/bookmarks/{uuid}`
 
 ### Get bookmark response
 
@@ -81,7 +81,7 @@ Status: `200 OK`
 
 Creates a bookmark.
 
-Endpoint: `POST` `/api/v1/bookmarks`
+Endpoint: `POST` `/api/v1/boards/{uuid}/bookmarks`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
@@ -114,7 +114,7 @@ Status: `200 OK`
 
 Update an existing bookmark.
 
-Endpoint: `PUT/PATCH` `/api/v1/bookmarks/{uuid}`
+Endpoint: `PUT/PATCH` `/api/v1/boards/{uuid}/bookmarks/{uuid}`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
@@ -147,7 +147,7 @@ Status: `200 OK`
 
 Delete a bookmark. All links created for this bookmark will be deleted as well.
 
-Endpoint: `DELETE` `/api/v1/bookmarks/{uuid}`
+Endpoint: `DELETE` `/api/v1/boards/{uuid}/bookmarks/{uuid}`
 
 ### Delete bookmark response
 

@@ -4,7 +4,13 @@
 - [API](#api)
   - [API Base Endpoint](#api-base-endpoint)
   - [API Authentication](#api-authentication)
-- [Endpoints](./endpoints/bookmarks.md)
+- Endpoints
+  - [Boards](./endpoints/boards.md)
+    - [List boards](./endpoints/boards.md#list-boards)
+    - [Get board](./endpoints/boards.md#get-board)
+    - [Create board](./endpoints/boards.md#create-board)
+    - [Update board](./endpoints/boards.md#update-board)
+    - [Delete board](./endpoints/boards.md#delete-board)
   - [Bookmarks](./endpoints/bookmarks.md)
     - [List bookmarks](./endpoints/bookmarks.md#list-bookmarks)
     - [Get bookmark](./endpoints/bookmarks.md#get-bookmark)
@@ -20,12 +26,6 @@
   - [Bookmark Category](./endpoints/bookmark-category)
     - [Attach category](./endpoints/bookmark-category.md#attach-category)
     - [Detach category](./endpoints/bookmark-category.md#detach-category)
-  - [Reminders](./endpoints/reminders.md)
-    - [List reminders](./endpoints/reminders.md#list-reminders)
-    - [Get reminder](./endpoints/reminders.md#get-reminder)
-    - [Create reminder](./endpoints/reminders.md#create-reminder)
-    - [Update reminder](./endpoints/reminders.md#update-reminder)
-    - [Delete reminder](./endpoints/reminders.md#delete-reminder)
 - [Contact](#contact)
 
 ## Introduction
@@ -33,6 +33,10 @@
 This document describes the API endpoints for [LinkArctic](https://linkarctic.com).
 
 A basic bookmarking tool to collect and organize your favorite websites and notes. Loads fast. Easy to use.
+
+- `Board` a workspace where you can create bookmarks and categories (Example 'Project A')
+- `Bookmark` a note/description/url basically anything (Example  a link to '[Taylor Swift - You Belong With Me - YouTube](https://www.youtube.com/watch?v=VuNIsY6JdUw)')
+- `Category` to group bookmarks you can attach them to a category (Example 'YouTube')
 
 ## API
 
@@ -44,7 +48,7 @@ Endpoint: `https://linkarctic.com/api/v1`
 
 When making a requests, the API token should be included in the Authorization header as a `Bearer token`.
 
-You can obtain your API token on your 'Account' page [https://linkarctic.com/account](https://linkarctic.com/account).
+You can obtain your API token on your 'Account' page [https://linkarctic.com](https://linkarctic.com).
 
 ## Contact
 
