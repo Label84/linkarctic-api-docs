@@ -57,7 +57,7 @@ Endpoint: `POST` `/api/v1/boards`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
-| name | YES | The name of the board | min. 5 characters, max. 20 characters |
+| name | YES | The name of the board | min. 4 characters, max. 20 characters |
 
 ### Create board response
 
@@ -80,7 +80,7 @@ Endpoint: `PUT/PATCH` `/api/v1/boards/{uuid}`
 
 | Field | Required | Description | Format |
 |---|---|---|---|
-| name | YES | The name of the board | min. 5 characters, max. 20 characters |
+| name | YES | The name of the board | min. 4 characters, max. 20 characters |
 
 ### Update board response
 
