@@ -10,7 +10,7 @@ Board is like a workspace that can groups the bookmarks and categories.
 
 ## List boards
 
-Retrieve all boards.
+Retrieve all boards that are bound to the current API token.
 
 Endpoint: `GET` `/api/v1/boards`
 
@@ -52,6 +52,9 @@ Status: `200 OK`
 ## Create board
 
 Creates a board.
+
+> [!NOTE]
+> The newly created board is NOT automatically bound to the current API token.
 
 Endpoint: `POST` `/api/v1/boards`
 
