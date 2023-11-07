@@ -54,7 +54,7 @@ Status: `200 OK`
 Creates a board.
 
 > [!NOTE]
-> The newly created board is NOT automatically bound to the current API token.
+> Only wildcard tokens can create boards.
 
 Endpoint: `POST` `/api/v1/boards`
 
@@ -101,6 +101,9 @@ Status: `200 OK`
 ## Delete board
 
 Delete a board. All bookmarks and categories will be deleted as well.
+
+> [!NOTE]
+> Only wildcard tokens can delete boards.
 
 Endpoint: `DELETE` `/api/v1/boards/{uuid}`
 

@@ -50,7 +50,7 @@ When making a requests, the API token should be included in the Authorization he
 
 You can obtain your API token on your 'Account' page [https://linkarctic.com](https://linkarctic.com).
 
-You can only access the boards that are bound to your API token. In case you get an `403 Forbidden` response, you are probably trying to access a board that is not bound to your API token.
+You can only access the boards that are bound to your API token. In case you get an `403 Forbidden` response, you are probably trying to access a board that is not bound to your API token. You can also create a 'wildcard' token - that allows you to access all boards.
 
 ## Contact
 
